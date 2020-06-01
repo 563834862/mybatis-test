@@ -14,3 +14,12 @@ class UserDaoTests {
     @Resource
     private UserDao userDao;
 ```
+批量新增回返主键Id
+```
+ <insert id="batchInsertUser" useGeneratedKeys="true" keyProperty="id">
+        insert into user(name)values
+        <foreach collection="list" item="item" separator=",">
+            (#{item.name})
+        </foreach>
+    </insert>
+```
