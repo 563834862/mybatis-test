@@ -1,0 +1,9 @@
+spring:
+  profiles:
+    active: dev
+mybatis:
+  mapper-locations: classpath:mapping/*Mapping.xml
+
+logging:
+  level:
+    com.yexh.mybatistest.dao.mapper: info
