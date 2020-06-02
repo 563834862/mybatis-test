@@ -38,5 +38,8 @@ mybatis:
 https://github.com/mybatis/mybatis-3/pull/547
 错误日志：
 ```
-org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.executor.ExecutorException: Error getting generated key or setting result to parameter object. Cause: org.apache.ibatis.binding.BindingException: Parameter 'articleHomeUserId' not found. Available parameters are [list, param1]
+org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.executor.ExecutorException: 
+Error getting generated key or setting result to parameter object. 
+Cause: org.apache.ibatis.binding.BindingException: 
+Parameter 'articleHomeUserId' not found. Available parameters are [list, param1]
 ```
