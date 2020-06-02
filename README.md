@@ -23,3 +23,14 @@ class UserDaoTests {
         </foreach>
     </insert>
 ```
+bug1: 整合 mybatis, 需要添加一些代码，未添加会启动报错
+```
+@SpringBootApplication
+@MapperScan
+public class MybatisTestApplication {
+```
+bug2: statment 找不到,  pom.xml 未对resources目录扫描。或者，mapper-locations 路径不符合要求
+```
+mybatis:
+  mapper-locations: classpath:mapping/*Mapping.xml
+```
