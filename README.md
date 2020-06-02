@@ -34,3 +34,9 @@ bug2: statment 找不到,  pom.xml 未对resources目录扫描。或者，mapper
 mybatis:
   mapper-locations: classpath:mapping/*Mapping.xml
 ```
+注意： 旧版本批量新增返回主键Id会报错,以下是修复的issue
+https://github.com/mybatis/mybatis-3/pull/547
+错误日志：
+```
+org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.executor.ExecutorException: Error getting generated key or setting result to parameter object. Cause: org.apache.ibatis.binding.BindingException: Parameter 'articleHomeUserId' not found. Available parameters are [list, param1]
+```
