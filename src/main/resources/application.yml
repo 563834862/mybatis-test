@@ -6,4 +6,6 @@ mybatis:
 
 logging:
   level:
-    com.yexh.mybatistest.dao.mapper: info
+    com.yexh.mybatistest: debug
+    file: d:\\springboot\\info.log
+debug: true
